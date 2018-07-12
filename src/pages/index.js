@@ -156,9 +156,8 @@ const ContactForm = () => (
             <br />
             <label>How can we help you?</label> <br />
             <textarea name="Problem" />
-            <div data-netlify-recaptcha />
             <div className="d-flex justify-content-center">
-              <label>&nbsp;</label>
+              <div data-netlify-recaptcha />
               <button className="btn btn-primary" type="submit">
                 Send
               </button>
