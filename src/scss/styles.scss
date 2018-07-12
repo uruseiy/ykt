@@ -1,0 +1,117 @@
+.header {
+  background-attachment: fixed, fixed, fixed;
+  background-image: linear-gradient(45deg, #6f9ceb 5%, #306bac 30%, #1229b4);
+  background-position: top left, center center, center center;
+  background-size: auto, cover, cover;
+  box-shadow: 0 2px 4px #ccc;
+
+  img {
+    max-height: 80vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  text-shadow: 0 2px 4px #ccc;
+}
+
+.footer {
+  background-attachment: fixed, fixed, fixed;
+  background-image: linear-gradient(225deg, #6f9ceb 5%, #306bac 30%, #1229b4);
+  background-position: top left, center center, center center;
+  background-size: auto, cover, cover;
+
+  color: white;
+  font-size: small;
+
+  .container {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.summary {
+  //   background-color: magenta;
+  padding: 50px 0px;
+}
+
+.detail {
+  background-image: linear-gradient(180deg, #40566f, white);
+  padding: 50px 0px;
+
+  h1 {
+    color: white;
+    text-shadow: 0 2px 4px #555;
+  }
+}
+
+.capabilities {
+  //   background-color: salmon;
+  padding: 50px 0px;
+  text-align: center;
+
+  h1 {
+    padding-bottom: 20pt;
+  }
+
+  i {
+    font-size: 40px;
+    color: white;
+    background: $color-brand-blue;
+    padding: 20px;
+    padding-top: 30px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  h2 {
+    font-size: 22pt;
+    margin: 25pt 0 20pt 0;
+  }
+}
+
+.contact {
+  background-color: cyan;
+  padding: 50px 0px;
+}
+
+.diamondicons {
+  ul {
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      margin-top: 60px;
+      display: inline-block;
+      margin-right: 60px;
+
+      span {
+        width: 120px;
+        height: 120px;
+        border: white 1px solid;
+        border-radius: 4px;
+        transform: rotate(45deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+      }
+
+      span:before {
+        vertical-align: center;
+        transform: rotate(-45deg);
+        display: inline-block;
+      }
+    }
+  }
+}
