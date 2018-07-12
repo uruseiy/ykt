@@ -16,17 +16,17 @@ const Header = () => (
 
       <div className="row">
         <div className="row-sm col-md text-center">
-          <a className="" href="#">
+          <a className="" href="#summary">
             <h3>About Us</h3>
           </a>
         </div>
         <div className="row-sm col-md text-center">
-          <a className="" href="#">
+          <a className="" href="#capabilities">
             <h3>Our Capabilities</h3>
           </a>
         </div>
         <div className="row-sm col-md text-center">
-          <a className="" href="#">
+          <a className="" href="#contact">
             <h3>Contact</h3>
           </a>
         </div>
@@ -45,10 +45,12 @@ const Footer = () => (
 
 const Summary = () => (
   <div className="summary">
-    <div className="container" href="#summary">
+    <div className="container">
       <div className="row">
         <div className="row-sm col-md-8">
-          <h1>About Us</h1>
+          <h1>
+            <a name="summary">About Us</a>
+          </h1>
           <hr />
           <div>{lorem}</div>
         </div>
@@ -73,17 +75,17 @@ const Detail = () => (
   <div className="detail">
     <div className="container" href="#detail">
       <div className="row">
-        <div className="row-sm col-md diamondicons">
+        <div className="d-none d-md-block col-md diamondicons">
           <ul>
-            <DiamondIcon icon="fa-project-diagram" color="green" />
-            <DiamondIcon icon="fa-map-marked-alt" color="blue" />
-            <DiamondIcon icon="fa-coins" color="lime" />
-            <DiamondIcon icon="fa-cogs" color="red" />
-            <DiamondIcon icon="fa-bezier-curve" color="yellow" />
-            <DiamondIcon icon="fa-chart-line" color="orange" />
+            <DiamondIcon icon="fa-project-diagram" color="#6f9ceb" />
+            <DiamondIcon icon="fa-map-marked-alt" color="#dbfe87" />
+            <DiamondIcon icon="fa-coins" color="#ffe381" />
+            <DiamondIcon icon="fa-cogs" color="#6f9ceb" />
+            <DiamondIcon icon="fa-bezier-curve" color="#dbfe87" />
+            <DiamondIcon icon="fa-chart-line" color="#ffe381" />
           </ul>
         </div>
-        <div className="row-sm col-md-6">
+        <div className="row-sm col-md-12 col-lg-6">
           <h1>What We Do</h1>
           <hr />
           <div>
@@ -111,7 +113,9 @@ const Capabilities = () => (
     <div className="container">
       <div className="row">
         <div className="row-sm col-md text-center">
-          <h1>Our Capabilities</h1>
+          <h1>
+            <a name="capabilities">Our Capabilities</a>
+          </h1>
         </div>
       </div>
       <div className="row">
@@ -132,8 +136,31 @@ const ContactForm = () => (
     <div className="container">
       <div className="row">
         <div className="col">
-          <h1>Contact Us</h1>
-          <div>Contact Form</div>
+          <h1>
+            <a name="contact">Contact Us</a>
+          </h1>
+        </div>
+      </div>
+      <div className="row justify-content-center">
+        <div className="col-12 col-md-8">
+          <form>
+            <p>Let us know how we can help you and we'll be in touch.</p>
+            <label>Name</label> <br />
+            <input type="text" />
+            <br />
+            <label>Phone Number</label> <br />
+            <input type="tel" />
+            <br />
+            <label>Email Address</label> <br />
+            <input type="email" />
+            <br />
+            <label>How can we help you?</label> <br />
+            <textarea />
+            <div className="d-flex justify-content-center">
+              <label>&nbsp;</label>
+              <button className="btn btn-primary">Send</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
