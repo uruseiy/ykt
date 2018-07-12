@@ -143,7 +143,7 @@ const ContactForm = () => (
       </div>
       <div className="row justify-content-center">
         <div className="col-12 col-md-8">
-          <form method="post" netlify name="contact">
+          <form method="post" name="contact" data-netlify="true">
             <p>Let us know how we can help you and we'll be in touch.</p>
             <label>Name</label> <br />
             <input type="text" name="Name" />
