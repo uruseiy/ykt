@@ -143,22 +143,25 @@ const ContactForm = () => (
       </div>
       <div className="row justify-content-center">
         <div className="col-12 col-md-8">
-          <form>
+          <form method="post" netlify name="contact">
             <p>Let us know how we can help you and we'll be in touch.</p>
             <label>Name</label> <br />
-            <input type="text" />
+            <input type="text" name="Name" />
             <br />
             <label>Phone Number</label> <br />
-            <input type="tel" />
+            <input type="tel" name="Phone" />
             <br />
             <label>Email Address</label> <br />
-            <input type="email" />
+            <input type="email" name="Email" />
             <br />
             <label>How can we help you?</label> <br />
-            <textarea />
+            <textarea name="Problem" />
+            <div data-netlify-recaptcha />
             <div className="d-flex justify-content-center">
               <label>&nbsp;</label>
-              <button className="btn btn-primary">Send</button>
+              <button className="btn btn-primary" type="submit">
+                Send
+              </button>
             </div>
           </form>
         </div>
